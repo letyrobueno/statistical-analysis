@@ -19,6 +19,10 @@ variables is both associated and independent.
 - **confounding variable:** a variable that is correlated with both the explanatory and response variables;
 - **observational data:** data where no treatment has been explicitly applied (or explicitly withheld). Generally only sufficient to show associations or form
 hypotheses that we can check using experiments;
+- **sampling methods:** simple, stratified, cluster, and multistage.
+- **experiments:** studies where the researchers assign treatments to cases;
+- **randomized experiment:** a experiment that includes randomization. Important when trying to show a causal connection between variables;
+
 
 ## Useful links:
 - Statistics Textbook Options: https://www.openintro.org/book/stat/

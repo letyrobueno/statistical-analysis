@@ -27,7 +27,15 @@ hypotheses that we can check using experiments;
 - **distributions can be:** right skewed, left skewed, or symmetric.
 - **standard deviation:** typical deviation of observations from the mean; usually about 70% of the data is within one standard deviation of the mean and about 95% is within two standard deviations;
 - **standard deviation and IQR (interquartile range, i.e. length of the box in a box plot given by $IQR=Q_3-Q_1$):** measures of variability;
+- % data between $Q_1$ and median? % between median and $Q_3$? Since $Q_1$ and $Q_3$ capture the middle 50% of data and the median splits data in the middle, 25% of data is between $Q_1$ and the median, and another 25% is between the median and $Q_3$;
+- **whiskers** try to capture data outside of the box, but never more than 1.5 × IQR;
+- **outliers:** observations lying beyond the whiskers;
+- **robust statistics:** extreme observations have little effect on their values. *Examples:* median and IQR (in contrast to mean and standard deviation);
 
+## Transforming data
+- **transformation (rescaling of data using a function):** when data are very strongly skewed, we sometimes transform them so they are easier to model;
+- **common funtions used:** $log_{10}x$, square root $\sqrt{x}$, and inverse $\frac{1}{x}$ where $x$ is the original observation.
+- **objectives:** see data structure differently, reduce skew, assist in modeling, or straighten a nonlinear relationship in a scatterplot.
 
 ## Useful links:
 - Statistics Textbook Options: https://www.openintro.org/book/stat/

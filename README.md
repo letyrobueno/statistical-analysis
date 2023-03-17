@@ -31,11 +31,13 @@ hypotheses that we can check using experiments;
 - **whiskers** try to capture data outside of the box, but never more than 1.5 × IQR;
 - **outliers:** observations lying beyond the whiskers;
 - **robust statistics:** extreme observations have little effect on their values. *Examples:* median and IQR (in contrast to mean and standard deviation);
+- **contingency table:** each value in the table represents the number of times (frequency) of data points between two categorical variables;
 
 ## Transforming data
 - **transformation (rescaling of data using a function):** when data are very strongly skewed, we sometimes transform them so they are easier to model;
 - **common funtions used:** $log_{10}x$, square root $\sqrt{x}$, and inverse $\frac{1}{x}$ where $x$ is the original observation.
 - **objectives:** see data structure differently, reduce skew, assist in modeling, or straighten a nonlinear relationship in a scatterplot.
 
-## Useful links:
+## Bibliography:
+- David Diez, Mine Çetinkaya-Rundel, and Christopher D Barr. OpenIntro Statistics, 4th edition, 2022.
 - Statistics Textbook Options: https://www.openintro.org/book/stat/

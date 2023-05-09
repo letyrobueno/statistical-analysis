@@ -8,8 +8,7 @@
 - dataframe = data matrix;
 - **associated/dependent variables:** when two variables show some connection with one another;
 - **independent variables:** when two variables are not associated;
-- **dependent of independent, never both:** a pair of variables are either related in some way (dependent) or not (independent). No pair of
-variables is both associated and independent.
+- **dependent of independent, never both:** a pair of variables are either related in some way (dependent) or not (independent). No pair of variables is both associated and independent.
 - **explanatory variable:** one variable that might causally affect another;
 - **response variable:** one variable that might be causally affected by another;
 - **observational study:** when researchers collect data in a way that does not directly interfere with how the data arise;
@@ -28,9 +27,9 @@ hypotheses that we can check using experiments;
 - **standard deviation:** typical deviation of observations from the mean; usually about 70% of the data is within one standard deviation of the mean and about 95% is within two standard deviations;
 - **standard deviation and IQR (interquartile range, i.e. length of the box in a box plot given by $IQR=Q_3-Q_1$):** measures of variability;
 - % data between $Q_1$ and median? % between median and $Q_3$? Since $Q_1$ and $Q_3$ capture the middle 50% of data and the median splits data in the middle, 25% of data is between $Q_1$ and the median, and another 25% is between the median and $Q_3$;
-- **whiskers** try to capture data outside of the box, but never more than 1.5 × IQR;
+- **whiskers** try to capture data outside of the box, but never more than $1.5 \times IQR$;
 - **outliers:** observations lying beyond the whiskers;
-- **robust statistics:** extreme observations have little effect on their values. *Examples:* median and IQR (in contrast to mean and standard deviation);
+- **robust statistics:** extreme observations have little effect on their values. *Examples:* median and IQR (in contrast to mean and standard deviation that are strongly affected by the values);
 - **contingency table:** each value in the table represents the number of times (frequency) of data points between two categorical variables;
 
 ## Transforming data
@@ -43,8 +42,8 @@ hypotheses that we can check using experiments;
 - **law of large numbers:** as more observations are collected, proportion of occurrences of an outcome converges to the probability of that outcome.
 - **disjoint (mutually exclusive) outcomes:** both cannot happen at the same time.
 - **events:** sets or collections of outcomes.
-- **addition rule of disjoint outcomes/events:** $P(A$ or $B) = P(A) + P(B)$. **Note:** in stats, **or** means one or another or both.
-- **general addition rule:** $P(A$ or $B) = P(A) + P(B) − P(A$ and $B)$.
+- **addition rule of disjoint outcomes/events:** $P(A \textrm{ or } B) = P(A) + P(B)$. **Note:** in stats, **or** means one or another or both.
+- **general addition rule:** $P(A \textrm{ or } B) = P(A) + P(B) − P(A \textrm{ and } B)$.
 - **probability distribution:** table with all disjoint outcomes and their associated probabilities. 
 - **Properties of a probability distribution:**
 1. outcomes are disjoint.
@@ -53,12 +52,16 @@ hypotheses that we can check using experiments;
 
 - **sample space:** set of all possible outcomes.
 - **complement of an event:** difference between the sample space and the event. It's denoted by $A^c$. **Properties:**
-1. outcomes not in $A$ must be in $A^c$, which means $P(A$ or $A^c)=1$.
+1. outcomes not in $A$ must be in $A^c$, which means $P(A \textrm{ or } A^c)=1$.
 2. $A$ and $A^c$ are disjoint.
-Combining both properties, we have $P(A$ or $A^c) = P(A) + P(A^c)$, which results in $P(A) = 1 − P(A^c)$.
+Combining both properties, we have $P(A \textrm{ or } A^c) = P(A) + P(A^c)$, which results in $P(A) = 1 − P(A^c)$.
 
 - **independent random processes:** knowing the outcome of one provides no useful information about the outcome of the other.
-- **multiplication rule for independent processes:** $P(A$ and $B) = P(A) \times P(B)$ where $A$ and $B$ are events from independent processes.
+- **multiplication rule for independent processes:** $P(A \textrm{ and } B) = P(A) \times P(B)$ where $A$ and $B$ are events from independent processes.
+- **marginal probaility:** probability based on a single variable without considering other variables.
+- **joint probability:** probability of outcomes for two or more variables. $P(A,B) = P(A \textrm{ and } B)$.
+- **table proportions:** summarize joint probabilities by taking a contingency table and dividing each value by the table's total value to obtain the proportions.
+- **conditional probability:** probability under a condition. $P(A \textrm{ given } B) = P(A|B) = \frac{P(A \textrm{ and } B)}{P(B)}$.
 
 ## Notes from the book:
 - David Diez, Mine Çetinkaya-Rundel, and Christopher D Barr. OpenIntro Statistics, 4th edition, 2022. Available at: https://www.openintro.org/book/os/
